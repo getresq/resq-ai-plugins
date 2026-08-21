@@ -1,0 +1,14 @@
+{
+  "name": "resq-internal",
+  "description": "Internal Claude plugins maintained by ResQ",
+  "owner": {
+    "name": "ResQ"
+  },
+  "plugins": [
+    {
+      "name": "resq",
+      "source": "./plugins/resq",
+      "description": "Connect Claude to authorized ResQ facilities and work-order data"
+    }
+  ]
+}

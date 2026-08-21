@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "resq",
+  "displayName": "ResQ",
+  "version": "1.0.0",
+  "description": "Connect Claude to authorized ResQ facilities and work-order data",
+  "author": {
+    "name": "ResQ"
+  },
+  "keywords": [
+    "resq",
+    "facilities",
+    "work-orders",
+    "mcp"
+  ]
+}
