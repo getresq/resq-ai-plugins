@@ -1,0 +1,29 @@
+{
+  "name": "resq",
+  "version": "1.0.0",
+  "description": "Connect Codex to authorized ResQ facilities and work-order data",
+  "author": {
+    "name": "ResQ"
+  },
+  "keywords": [
+    "resq",
+    "facilities",
+    "work-orders",
+    "mcp"
+  ],
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "ResQ",
+    "shortDescription": "Connect Codex to ResQ facilities and work orders.",
+    "longDescription": "Use authorized ResQ facilities and work-order data through the production ResQ MCP API.",
+    "developerName": "ResQ",
+    "category": "Productivity",
+    "capabilities": [
+      "Read"
+    ],
+    "websiteURL": "https://www.getresq.com/",
+    "defaultPrompt": [
+      "Show me the facilities and work orders I can access in ResQ."
+    ]
+  }
+}

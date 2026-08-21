@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "resq": {
+      "type": "http",
+      "url": "https://api.getresq.com/mcp"
+    }
+  }
+}
