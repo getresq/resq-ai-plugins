@@ -30,6 +30,14 @@ Install the ResQ plugin:
 
     codex plugin add resq@resq-internal
 
+## ChatGPT
+
+Register the production MCP endpoint from <https://chatgpt.com/plugins>:
+
+    https://api.getresq.com/mcp
+
+Test the OAuth connection in a personal workspace, then have a workspace administrator publish the tested plugin to the intended team roles. The complete handoff checklist is in `plugins/resq/ADMIN_SETUP.md`.
+
 ## Local validation
 
 From the repository root, add the local marketplace and install the plugin:
