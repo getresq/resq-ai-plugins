@@ -1,6 +1,6 @@
 {
   "name": "resq-internal",
-  "description": "Internal Claude plugins maintained by ResQ",
+  "description": "ResQ plugins for authorized facilities and work-order data",
   "owner": {
     "name": "ResQ"
   },

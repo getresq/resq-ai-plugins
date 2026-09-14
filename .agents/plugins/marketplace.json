@@ -1,7 +1,7 @@
 {
   "name": "resq-internal",
   "interface": {
-    "displayName": "ResQ Internal"
+    "displayName": "ResQ"
   },
   "plugins": [
     {

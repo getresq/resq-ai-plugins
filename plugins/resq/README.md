@@ -10,7 +10,7 @@ determine what the integration can return. Ask your ResQ administrator for
 access if the organization you need is unavailable.
 
 For Claude Code and Codex installation commands, see the
-[repository guide](../../README.md). Workspace administrators can also make the
+[repository guide](https://github.com/getresq/resq-ai-plugins#readme). Workspace administrators can also make the
 connection available through their workspace settings.
 
 ## What you can ask
@@ -94,6 +94,7 @@ message, excluding credentials and sensitive record data.
 - `.claude-plugin/plugin.json`: Claude plugin identity, version, and publisher links.
 - `.mcp.json`: production ResQ MCP endpoint used for OAuth discovery.
 - `assets/`: official ResQ branding and source provenance.
+
 ## Policies
 
 [Privacy policy](https://www.getresq.com/privacy-policy) ·
