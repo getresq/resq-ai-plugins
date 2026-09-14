@@ -1,0 +1,44 @@
+{
+  "assets": [
+    {
+      "file": "resq-logo-256.png",
+      "url": "https://cdn.prod.website-files.com/65b2497d2f86e9ab7f2cbf95/66bcf6662b77757c47c5fc08_resq-logo-orange-256.png",
+      "discovered_on": "https://www.getresq.com/",
+      "retrieved_on": "2026-09-10",
+      "sha256": "5a5a4ee29cdc7fd44518dc78db3ee5197eee8b24fbbd1e7bc46a468ab4c5d2c1",
+      "bytes": 1778,
+      "content_type": "image/png",
+      "transformations": "none",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "file": "resq-wordmark.svg",
+      "url": "https://cdn.prod.website-files.com/65b2497d2f86e9ab7f2cbf95/66bcf283927b22d32054dbe2_ResQ%20Orange%20Logo.svg",
+      "discovered_on": "https://www.getresq.com/",
+      "retrieved_on": "2026-09-10",
+      "sha256": "05e6e8293ef897951026c5cb5c3071222446dd0c44255a80f024e9fa169e4af1",
+      "bytes": 4629,
+      "content_type": "image/svg+xml",
+      "transformations": "none",
+      "svg_attributes": {
+        "width": "89",
+        "height": "28",
+        "viewBox": "0 0 89 28",
+        "fill": "none"
+      }
+    },
+    {
+      "file": "resq-favicon-32.png",
+      "url": "https://cdn.prod.website-files.com/65b2497d2f86e9ab7f2cbf95/66bcf66055e1bffce0ec24c8_resq-logo-orange-32.png",
+      "discovered_on": "https://www.getresq.com/",
+      "retrieved_on": "2026-09-10",
+      "sha256": "7a6ea9c3fc794483d854c9f44f787d9aad88bb73459fdb229bb6543b1cf8a0c6",
+      "bytes": 343,
+      "content_type": "image/png",
+      "transformations": "none",
+      "width": 32,
+      "height": 32
+    }
+  ]
+}

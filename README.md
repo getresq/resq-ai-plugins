@@ -1,6 +1,8 @@
 # ResQ AI Plugins
 
-Internal AI plugin marketplaces maintained by ResQ.
+Connect Claude Code, Codex, and ChatGPT to your authorized ResQ facilities and work orders.
+
+You need a ResQ account with access to an eligible organization. Each user connects through ResQ OAuth; the package contains no credentials. See the [plugin guide](plugins/resq/README.md) for account setup, example requests, and reconnecting.
 
 ## Available plugins
 
@@ -8,13 +10,16 @@ Internal AI plugin marketplaces maintained by ResQ.
 
 ## Claude Code
 
-Validate the marketplace:
+Run these commands from the root of this directory.
+
+Validate the marketplace and plugin:
 
     claude plugin validate .
+    claude plugin validate ./plugins/resq
 
 Add the marketplace:
 
-    claude plugin marketplace add getresq/resq-ai-plugins
+    claude plugin marketplace add ./
 
 Install the ResQ plugin:
 
@@ -22,9 +27,9 @@ Install the ResQ plugin:
 
 ## Codex
 
-Add the marketplace:
+From the root of this directory, add the marketplace:
 
-    codex plugin marketplace add getresq/resq-ai-plugins
+    codex plugin marketplace add ./
 
 Install the ResQ plugin:
 
@@ -36,19 +41,9 @@ Register the production MCP endpoint from <https://chatgpt.com/plugins>:
 
     https://api.getresq.com/mcp
 
-Test the OAuth connection in a personal workspace, then have a workspace administrator publish the tested plugin to the intended team roles. The complete handoff checklist is in `plugins/resq/ADMIN_SETUP.md`.
-
-## Local validation
-
-From the repository root, add the local marketplace and install the plugin:
-
-    claude plugin marketplace add ./
-    claude plugin install resq@resq-internal
-
-    codex plugin marketplace add ./
-    codex plugin add resq@resq-internal
-
-Complete the ResQ OAuth flow when prompted, then confirm the ResQ MCP tools are available.
+Complete the ResQ OAuth flow when prompted and select an organization your
+account can access. A workspace administrator can manage availability for other
+workspace members; each user signs into ResQ separately.
 
 ## Publishing updates
 
@@ -61,3 +56,9 @@ Complete the ResQ OAuth flow when prompted, then confirm the ResQ MCP tools are 
 5. Open and merge a pull request into the default branch.
 
 Use patch releases for fixes, minor releases for backward-compatible features, and major releases for breaking changes.
+
+## Help and policies
+
+- [ResQ support](https://support.getresq.com/)
+- [Privacy policy](https://www.getresq.com/privacy-policy)
+- [Terms of service](https://www.getresq.com/terms-of-service)

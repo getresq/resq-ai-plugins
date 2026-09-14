@@ -1,0 +1,12 @@
+# Local build outputs and temporary files
+/dist/
+/tmp/
+.DS_Store
+
+# Private working notes and publication records
+/.private/
+
+# Local credentials and environment configuration
+.env
+.env.*
+!.env.example

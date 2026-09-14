@@ -2,11 +2,12 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "resq",
   "displayName": "ResQ",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "Connect Claude to authorized ResQ facilities and work-order data",
   "author": {
     "name": "ResQ"
   },
+  "homepage": "https://www.getresq.com/",
   "keywords": [
     "resq",
     "facilities",
