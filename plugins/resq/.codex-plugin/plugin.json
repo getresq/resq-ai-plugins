@@ -1,6 +1,6 @@
 {
   "name": "resq",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Connect OpenAI's ChatGPT and Codex to authorized ResQ facilities and work-order data",
   "author": {
     "name": "ResQ"
@@ -15,7 +15,7 @@
   "repository": "https://github.com/getresq/resq-ai-plugins",
   "mcpServers": "./.mcp.json",
   "interface": {
-    "displayName": "ResQ for OpenAI",
+    "displayName": "ResQ",
     "shortDescription": "Connect OpenAI ChatGPT and Codex to authorized ResQ data.",
     "longDescription": "Use authorized ResQ facilities and work-order data in OpenAI's ChatGPT and Codex through the production ResQ MCP API. ResQ OAuth starts when a user connects the MCP server.",
     "developerName": "ResQ",

@@ -13,8 +13,11 @@ ResQ publishes this plugin for two AI providers:
 | Anthropic | Claude Code | `resq-claude` | `.claude-plugin/marketplace.json` |
 | OpenAI | Codex and ChatGPT | `resq-openai` | `.agents/plugins/marketplace.json` |
 
-Both integrations use the plugin identifier `resq` and connect to the ResQ production
-MCP API. ResQ is the plugin publisher and authentication provider.
+The plugin is named **ResQ** on both providers and uses the same identifier,
+`resq`. Installation commands use `plugin@marketplace`: `resq@resq-claude` selects
+ResQ from the Claude catalog, and `resq@resq-openai` selects ResQ from the OpenAI
+catalog. Both connect to the ResQ production MCP API. ResQ is the plugin publisher
+and authentication provider.
 
 ## Anthropic: Claude Code
 
