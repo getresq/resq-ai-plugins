@@ -1,6 +1,6 @@
 # ResQ AI Plugin
 
-Connects ChatGPT, Codex, and Claude Code to ResQ through the production MCP API.
+Connects OpenAI's ChatGPT and Codex, and Anthropic's Claude Code, to ResQ through the production MCP API. ResQ publishes the plugin and handles authentication.
 
 ## Before connecting
 
@@ -31,7 +31,7 @@ ResQ uses OAuth. The plugin does not contain API keys, access tokens, client cre
 
 The production MCP endpoint publishes OAuth protected-resource and authorization-server metadata. A supported client discovers that metadata and displays its own **Connect**, **Sign in**, or **Authenticate** action. The user is then redirected to ResQ and access is limited to the organizations available to that account.
 
-### ChatGPT
+### OpenAI: ChatGPT
 
 ChatGPT workspace registration is performed against this MCP endpoint:
 
@@ -43,7 +43,7 @@ ChatGPT workspace registration is performed against this MCP endpoint:
 4. Sign into ResQ, select the authorized organization, and approve access.
 5. After testing, a workspace admin can publish the plugin to the team.
 
-### Claude Code
+### Anthropic: Claude Code
 
 1. Install or enable the plugin.
 2. Open `/mcp` in Claude Code.
@@ -52,7 +52,7 @@ ChatGPT workspace registration is performed against this MCP endpoint:
 5. Sign into ResQ.
 6. Select your authorized organization and approve access.
 
-### Codex
+### OpenAI: Codex
 
 1. Install or enable the plugin.
 2. Authenticate with ResQ when prompted.
@@ -68,13 +68,13 @@ If the client reports expired or revoked authorization, use its ResQ connection
 controls to reconnect. A permission denial for a particular record may instead
 mean that your account or selected organization cannot access it.
 
-- **Claude Code:** open `/mcp`, select the ResQ server, clear its authentication,
+- **Anthropic Claude Code:** open `/mcp`, select the ResQ server, clear its authentication,
   then choose **Authenticate** again.
-- **Codex CLI:** for a separately configured MCP server named `resq`, run
+- **OpenAI Codex CLI:** for a separately configured MCP server named `resq`, run
   `codex mcp logout resq`, followed by `codex mcp login resq`. For a plugin-managed
   connection, use the plugin's authentication controls and the server identifier
   shown by the client; it may differ from a separately configured server name.
-- **ChatGPT:** disconnect the ResQ connection in your plugin settings, then
+- **OpenAI ChatGPT:** disconnect the ResQ connection in your plugin settings, then
   connect it again through the supported OAuth flow.
 
 To change organizations, reconnect and select the intended organization during
@@ -90,8 +90,8 @@ message, excluding credentials and sensitive record data.
 
 ## Included configuration
 
-- `.codex-plugin/plugin.json`: plugin identity, version, marketplace metadata, and MCP reference.
-- `.claude-plugin/plugin.json`: Claude plugin identity, version, and publisher links.
+- `.codex-plugin/plugin.json`: OpenAI plugin identity, version, marketplace metadata, and MCP reference.
+- `.claude-plugin/plugin.json`: Anthropic Claude plugin identity, version, and publisher links.
 - `.mcp.json`: production ResQ MCP endpoint used for OAuth discovery.
 - `assets/`: official ResQ branding and source provenance.
 

@@ -1,7 +1,7 @@
 {
-  "name": "resq-internal",
+  "name": "resq-openai",
   "interface": {
-    "displayName": "ResQ"
+    "displayName": "ResQ for OpenAI"
   },
   "plugins": [
     {

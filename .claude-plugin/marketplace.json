@@ -1,6 +1,6 @@
 {
-  "name": "resq-internal",
-  "description": "ResQ plugins for authorized facilities and work-order data",
+  "name": "resq-claude",
+  "description": "ResQ for Claude by Anthropic: authorized facilities and work-order data",
   "owner": {
     "name": "ResQ"
   },
@@ -8,7 +8,7 @@
     {
       "name": "resq",
       "source": "./plugins/resq",
-      "description": "Connect Claude to authorized ResQ facilities and work-order data"
+      "description": "Connect Anthropic's Claude to authorized ResQ facilities and work-order data"
     }
   ]
 }
