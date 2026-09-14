@@ -40,41 +40,6 @@ Follow the [ChatGPT setup instructions](plugins/resq/README.md#openai-chatgpt) t
 `https://api.getresq.com/mcp` in developer mode and connect through ResQ OAuth.
 A workspace administrator can manage availability for other workspace members.
 
-## Migrate from resq-internal
-
-Version 2.0.0 replaces the shared `resq-internal` marketplace ID with
-`resq-claude` for Anthropic and `resq-openai` for OpenAI. The plugin ID remains
-`resq`. Existing installations need to switch catalogs once; new installations
-can use the commands above.
-
-### Anthropic: Claude Code migration
-
-For a user-scoped installation:
-
-    claude plugin uninstall resq@resq-internal --scope user --keep-data
-    claude plugin marketplace remove resq-internal --scope user
-    claude plugin marketplace add getresq/resq-ai-plugins --scope user
-    claude plugin install resq@resq-claude --scope user
-
-If the existing installation uses project or local scope, use that scope instead
-of `user` for all four commands. Skip the uninstall or removal step if that old
-plugin or catalog is already absent.
-
-### OpenAI: Codex migration
-
-    codex plugin remove resq@resq-internal
-    codex plugin marketplace remove resq-internal
-    codex plugin marketplace add getresq/resq-ai-plugins
-    codex plugin add resq@resq-openai
-
-Skip the uninstall or removal step if that old plugin or catalog is already absent.
-
-If project or workspace settings reference `resq-internal`, update those references
-to the corresponding provider's new marketplace ID. Reconnect to ResQ if prompted,
-then start a new conversation. ChatGPT connections registered directly against
-`https://api.getresq.com/mcp` use the same endpoint; these catalog IDs apply to
-installation from this repository.
-
 ## Repository structure
 
 This repository packages the connection to ResQ. MCP tools and OAuth behavior are
