@@ -10,28 +10,27 @@ ResQ publishes this plugin for two AI providers:
 
 | Provider | Products | Marketplace ID | Marketplace file |
 | --- | --- | --- | --- |
-| Anthropic | Claude Code | `resq-claude` | `.claude-plugin/marketplace.json` |
-| OpenAI | Codex and ChatGPT | `resq-openai` | `.agents/plugins/marketplace.json` |
+| Anthropic | Claude Code | `resq-ai` | `.claude-plugin/marketplace.json` |
+| OpenAI | Codex and ChatGPT | `resq-ai` | `.agents/plugins/marketplace.json` |
 
-The plugin is named **ResQ** on both providers and uses the same identifier,
-`resq`. Installation commands use `plugin@marketplace`: `resq@resq-claude` selects
-ResQ from the Claude catalog, and `resq@resq-openai` selects ResQ from the OpenAI
-catalog. Both connect to the ResQ production MCP API. ResQ is the plugin publisher
-and authentication provider.
+The plugin is named **ResQ** on both providers. Both use `resq@resq-ai` for
+installation: `resq` is the plugin ID and `resq-ai` is the marketplace ID.
+Each client reads its own catalog file and connects to the ResQ production MCP
+API. ResQ is the plugin publisher and authentication provider.
 
 ## Anthropic: Claude Code
 
 Add the GitHub marketplace and install the ResQ plugin:
 
     claude plugin marketplace add getresq/resq-ai-plugins
-    claude plugin install resq@resq-claude
+    claude plugin install resq@resq-ai
 
 ## OpenAI: Codex
 
 Add the GitHub marketplace and install the ResQ plugin:
 
     codex plugin marketplace add getresq/resq-ai-plugins
-    codex plugin add resq@resq-openai
+    codex plugin add resq@resq-ai
 
 Complete ResQ authentication when prompted, then start a new thread.
 
