@@ -91,6 +91,11 @@ OpenAI's public directory requires a separate submission and review.
 
 ## Help and policies
 
+The plugin configuration and documentation are licensed under the [MIT License](LICENSE).
+ResQ logos and brand artwork in `plugins/resq/assets/` are excluded from that
+license. No rights to ResQ trademarks are granted. Access to ResQ's hosted API
+requires authentication and remains subject to ResQ's terms of service.
+
 - [ResQ support](https://support.getresq.com/)
 - [Privacy policy](https://www.getresq.com/privacy-policy)
 - [Terms of service](https://www.getresq.com/terms-of-service)
