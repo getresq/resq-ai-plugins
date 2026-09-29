@@ -1,6 +1,6 @@
 {
   "name": "resq",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Connect OpenAI's ChatGPT and Codex to authorized ResQ facilities and work-order data",
   "author": {
     "name": "ResQ"

@@ -14,3 +14,23 @@ Use the original square PNG for both `interface.logo` and `interface.composerIco
 
 The Codex manifest references the square PNG as both `interface.logo` and
 `interface.composerIcon`.
+
+The Claude manifest references the original `resq-wordmark.svg` as its `icon`.
+Anthropic's review requests an SVG or a 512 × 512 PNG; the existing SVG meets
+the format requirement without resizing the 256 × 256 OpenAI logo.
+
+## Directory reviewer notes
+
+All files in this directory are static branding or provenance documentation.
+The plugin packages no executable code, hooks, or local MCP commands. Its
+`.mcp.json` configures only the remote HTTPS ResQ MCP endpoint. Nothing in the
+plugin executes these assets or this README.
+
+The SVG contains only an SVG root and two path elements, with no scripts,
+event handlers, embedded content, or external references. The PNG files are
+static images; no fonts are bundled. `sources.json` records their original
+hashes for review.
+
+Anthropic's image/font screening note is informational. Its directory-policy
+hold requires reviewer assessment; these notes clarify asset usage and do not
+claim to clear that hold.
