@@ -1,6 +1,6 @@
 {
   "name": "resq-ai",
-  "description": "ResQ for Claude by Anthropic: authorized facilities and work-order data",
+  "description": "ResQ for Claude by Anthropic: maintenance and repairs",
   "owner": {
     "name": "ResQ"
   },
@@ -8,7 +8,7 @@
     {
       "name": "resq",
       "source": "./plugins/resq",
-      "description": "Connect Anthropic's Claude to authorized ResQ facilities and work-order data"
+      "description": "Read ResQ records and, with explicit write consent and account permissions, create and accept work orders, manage appointments, and start visits."
     }
   ]
 }

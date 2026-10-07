@@ -1,6 +1,9 @@
 # ResQ AI Plugins
 
-Connect Anthropic's Claude Code and OpenAI's Codex and ChatGPT to your authorized ResQ facilities and work orders.
+Connect Anthropic's Claude Code and OpenAI's Codex and ChatGPT to ResQ for
+maintenance and repairs. Read authorized records and, with explicit write consent
+and account permissions, create and accept work orders, manage appointments,
+and start visits.
 
 You need a ResQ account with access to an eligible organization. Each user connects through ResQ OAuth; the package contains no credentials. See the [plugin guide](plugins/resq/README.md) for account setup, example requests, and reconnecting.
 
@@ -34,7 +37,8 @@ Add the GitHub marketplace and install the ResQ plugin:
 
 Complete ResQ authentication when prompted, then start a new thread.
 
-Your ResQ account permissions determine which data you can access.
+Your ResQ account permissions and OAuth consent determine which records and
+actions you can access. Read-only connections remain supported.
 
 ## OpenAI: ChatGPT
 

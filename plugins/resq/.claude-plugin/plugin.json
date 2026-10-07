@@ -2,8 +2,8 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "resq",
   "displayName": "ResQ",
-  "version": "2.0.3",
-  "description": "Connect Anthropic's Claude to authorized ResQ facilities and work-order data",
+  "version": "2.1.0",
+  "description": "Read ResQ records and, with explicit write consent and account permissions, create and accept work orders, manage appointments, and start visits.",
   "author": {
     "name": "ResQ"
   },

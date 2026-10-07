@@ -4,10 +4,10 @@ Connects OpenAI's ChatGPT and Codex, and Anthropic's Claude Code, to ResQ throug
 
 ## Before connecting
 
-You need a ResQ account with access to the organization whose data you want to
-read. Your account permissions and the organization selected during consent
-determine what the integration can return. Ask your ResQ administrator for
-access if the organization you need is unavailable.
+You need a ResQ account with access to the organization you want to work with.
+Your account permissions, approved access, and the organization selected during
+consent determine which records and actions are available. Ask your ResQ
+administrator for access if the organization you need is unavailable.
 
 For Claude Code and Codex installation commands, see the
 [repository guide](https://github.com/getresq/resq-ai-plugins#readme). Workspace administrators can also make the
@@ -15,15 +15,30 @@ connection available through their workspace settings.
 
 ## What you can ask
 
-The public integration is read-only. For a facility organization, try:
+Read authorized ResQ records. For a facility organization, try:
 
 - "List the ResQ facilities I can access."
 - "Show the work orders for this facility."
 - "Summarize work order [code], including its status and available details."
 
 Use a facility or work-order identifier returned by ResQ in follow-up requests.
-Available tools depend on the selected organization type. The integration
-does not create, update, or delete work orders.
+Available tools depend on the selected organization type, account permissions,
+and approved access.
+
+With explicit write consent and existing permissions, supported actions include:
+
+- Creating and accepting work orders.
+- Scheduling and rescheduling work-order appointments.
+- Returning appointments to scheduling.
+- Starting work-order visits.
+
+For example, ask "Create a work order for a leaking sink at [facility]" or
+"Reschedule the appointment for work order [code] to [date and time]." Provide
+any additional details requested before the action is performed. An action is
+available only when the connected account and organization are eligible for it.
+
+Read-only access remains available. Media upload, attachment creation, and
+invoice submission are not supported.
 
 ## Authentication
 
@@ -60,7 +75,12 @@ ChatGPT workspace registration is performed against this MCP endpoint:
 4. Select your authorized organization and approve access.
 5. Start a new thread so Codex loads the installed MCP tools.
 
-Access is limited to the ResQ organizations and data available to your account.
+Access is limited to the ResQ organizations, records, and actions available to
+your account. Write operations require explicit write consent; installing or
+updating the plugin does not grant that consent or expand account permissions.
+If an existing connection has read-only access, reconnect through the client's
+supported OAuth flow to approve write access when offered. Start a new
+conversation after reconnecting so the client can load the available tools.
 
 ## Reconnect or change organizations
 

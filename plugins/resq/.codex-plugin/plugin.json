@@ -1,7 +1,7 @@
 {
   "name": "resq",
-  "version": "2.0.3",
-  "description": "Connect OpenAI's ChatGPT and Codex to authorized ResQ facilities and work-order data",
+  "version": "2.1.0",
+  "description": "Read ResQ records and, with explicit write consent and account permissions, create and accept work orders, manage appointments, and start visits.",
   "author": {
     "name": "ResQ"
   },
@@ -17,11 +17,12 @@
   "interface": {
     "displayName": "ResQ",
     "shortDescription": "Maintenance and Repairs",
-    "longDescription": "Use authorized ResQ facilities and work-order data in OpenAI's ChatGPT and Codex through the production ResQ MCP API. ResQ OAuth starts when a user connects the MCP server.",
+    "longDescription": "Connect facility and service-provider teams to ResQ in ChatGPT and Codex. Read authorized facilities, equipment, work orders, invoices, attachments, and visits. With explicit write consent and existing account permissions, create and accept work orders, schedule or reschedule appointments, return appointments to scheduling, and start visits. Available tools depend on the selected organization, permissions, and consent. Read-only access remains available. Media upload, attachment creation, and invoice submission are not supported. ResQ OAuth starts when you connect.",
     "developerName": "ResQ",
     "category": "Productivity",
     "capabilities": [
-      "Read"
+      "Read",
+      "Write"
     ],
     "websiteURL": "https://www.getresq.com/",
     "privacyPolicyURL": "https://www.getresq.com/privacy-policy",
