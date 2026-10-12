@@ -113,7 +113,10 @@ message, excluding credentials and sensitive record data.
 - `.codex-plugin/plugin.json`: OpenAI plugin identity, version, marketplace metadata, and MCP reference.
 - `.claude-plugin/plugin.json`: Anthropic Claude plugin identity, version, and publisher links.
 - `.mcp.json`: production ResQ MCP endpoint used for OAuth discovery.
-- `assets/`: official ResQ branding and source provenance.
+- `assets/`: official ResQ branding referenced by the provider manifests.
+
+Asset provenance and the unused reference favicon are maintained outside the
+plugin package in [the repository brand documentation](https://github.com/getresq/resq-ai-plugins/tree/master/docs/brand).
 
 ## Policies
 

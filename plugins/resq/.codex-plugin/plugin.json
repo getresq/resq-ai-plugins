@@ -1,6 +1,6 @@
 {
   "name": "resq",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Read ResQ records and, with explicit write consent and account permissions, create and accept work orders, manage appointments, and start visits.",
   "author": {
     "name": "ResQ"

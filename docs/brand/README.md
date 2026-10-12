@@ -10,7 +10,7 @@ Downloaded unchanged from the assets linked by [ResQ's public website](https://w
 
 Use the original square PNG for both `interface.logo` and `interface.composerIcon`. The horizontal wordmark is not a square directory icon. The original logo is sufficient without resizing: OpenAI's [branding asset requirements](https://developers.openai.com/plugins/deploy/submission-errors#image-errors) accept square raster images from 48 × 48 through 4,096 × 4,096, up to 5 MiB.
 
-`sources.json` records the exact source URL, retrieval date, original dimensions, byte size, and SHA-256 for each file. These are existing ResQ brand assets; no new artwork was generated and no downloaded artwork was altered.
+`sources.json` uses repository-root-relative file paths and records the exact source URL, retrieval date, original dimensions, byte size, and SHA-256 for each file. These are existing ResQ brand assets; no new artwork was generated and no downloaded artwork was altered.
 
 The Codex manifest references the square PNG as both `interface.logo` and
 `interface.composerIcon`.
@@ -21,10 +21,12 @@ the format requirement without resizing the 256 × 256 OpenAI logo.
 
 ## Directory reviewer notes
 
-All files in this directory are static branding or provenance documentation.
+This directory contains provenance documentation and an unused reference favicon.
+It is outside the plugin package. Only the manifest-referenced branding assets
+remain in `plugins/resq/assets/`.
 The plugin packages no executable code, hooks, or local MCP commands. Its
 `.mcp.json` configures only the remote HTTPS ResQ MCP endpoint. Nothing in the
-plugin executes these assets or this README.
+plugin executes these assets. This README and `sources.json` are not bundled.
 
 The SVG contains only an SVG root and two path elements, with no scripts,
 event handlers, embedded content, or external references. The PNG files are

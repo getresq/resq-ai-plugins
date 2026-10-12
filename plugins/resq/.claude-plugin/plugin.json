@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "resq",
   "displayName": "ResQ",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Read ResQ records and, with explicit write consent and account permissions, create and accept work orders, manage appointments, and start visits.",
   "author": {
     "name": "ResQ"

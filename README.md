@@ -58,7 +58,9 @@ implemented by the service at `https://api.getresq.com/mcp`.
 | `plugins/resq/.claude-plugin/plugin.json` | Anthropic Claude plugin identity and version. |
 | `plugins/resq/.codex-plugin/plugin.json` | OpenAI plugin identity, version, branding, and MCP reference. |
 | `plugins/resq/.mcp.json` | Shared production MCP connection. |
-| `plugins/resq/assets/` | Official branding and source provenance. |
+| `plugins/resq/assets/` | Branding referenced by the provider manifests. |
+| `docs/brand/` | Asset provenance and unused reference artwork; excluded from plugin packages. |
+| `scripts/package_plugins.py` | Builds separate OpenAI and Claude submission ZIPs. |
 
 Both catalogs point to `./plugins/resq` relative to the repository root. The
 Codex source type `local` means the plugin is bundled in this repository, including
@@ -93,10 +95,22 @@ Use patch releases for fixes, minor releases for backward-compatible features, a
 Publishing to GitHub updates this installation source. Listing in Anthropic's or
 OpenAI's public directory requires a separate submission and review.
 
+## Submission ZIPs
+
+Build both provider packages from the current checkout:
+
+    python3 scripts/package_plugins.py
+
+The versioned ZIPs are written to ignored `dist/`. Each ZIP contains its provider
+manifest at the archive root, `.mcp.json`, the referenced icon, and `LICENSE`.
+Repository documentation, provenance records, unused artwork, marketplace
+catalogs, and the other provider's manifest are excluded. These archives package
+the plugin itself, not the entire marketplace repository.
+
 ## Help and policies
 
 The plugin configuration and documentation are licensed under the [MIT License](LICENSE).
-ResQ logos and brand artwork in `plugins/resq/assets/` are excluded from that
+ResQ logos and brand artwork in `plugins/resq/assets/` and `docs/brand/` are excluded from that
 license. No rights to ResQ trademarks are granted. Access to ResQ's hosted API
 requires authentication and remains subject to ResQ's terms of service.
 

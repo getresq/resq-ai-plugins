@@ -1,7 +1,7 @@
 {
   "assets": [
     {
-      "file": "resq-logo-256.png",
+      "file": "plugins/resq/assets/resq-logo-256.png",
       "url": "https://cdn.prod.website-files.com/65b2497d2f86e9ab7f2cbf95/66bcf6662b77757c47c5fc08_resq-logo-orange-256.png",
       "discovered_on": "https://www.getresq.com/",
       "retrieved_on": "2026-09-10",
@@ -13,7 +13,7 @@
       "height": 256
     },
     {
-      "file": "resq-wordmark.svg",
+      "file": "plugins/resq/assets/resq-wordmark.svg",
       "url": "https://cdn.prod.website-files.com/65b2497d2f86e9ab7f2cbf95/66bcf283927b22d32054dbe2_ResQ%20Orange%20Logo.svg",
       "discovered_on": "https://www.getresq.com/",
       "retrieved_on": "2026-09-10",
@@ -29,7 +29,7 @@
       }
     },
     {
-      "file": "resq-favicon-32.png",
+      "file": "docs/brand/resq-favicon-32.png",
       "url": "https://cdn.prod.website-files.com/65b2497d2f86e9ab7f2cbf95/66bcf66055e1bffce0ec24c8_resq-logo-orange-32.png",
       "discovered_on": "https://www.getresq.com/",
       "retrieved_on": "2026-09-10",
